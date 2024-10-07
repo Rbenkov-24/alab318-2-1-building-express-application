@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Coffee House - Menu
+        link(rel='stylesheet', href='/style.css')
+    body
+        .container
+            h1 Welcome to Our Coffee House
+            nav
+                ul
+                    li: a(href='/') Home
+                    li: a(href='/menu') Menu
+                    li: a(href='/contact') Contact
+            h2 Our Menu
+            ul
+                li Coffee - $3
+                li Tea - $2
+                li Pastry - $2.50
+
+            //button to download the menu
+            
+            form(action='/download-menu', method='GET')
+                button(type='submit') Download Menu
+            img(src='/coffee_menu.jpg', alt='Coffee Image', style='margin-top: 20px;')
